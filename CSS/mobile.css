@@ -73,7 +73,7 @@ header {
   padding-top: 40px;
 }
 
-#introduction {
+#introduction-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,7 +82,7 @@ header {
   gap: 40px;
 }
 
-#introduction .lets-talk-link {
+#introduction-section .lets-talk-link {
   width: 167px;
   height: 54px;
   border: none;
@@ -96,17 +96,17 @@ header {
   text-decoration: none !important;
 }
 
-#introduction .lets-talk-link img {
+#introduction-section .lets-talk-link img {
   position: absolute;
   margin-top: -2px;
   margin-left: 5px;
 }
 
-#introduction h2 {
+#introduction-section h2 {
   margin-top: 30px;
 }
 
-#introduction p {
+#introduction-section p {
   margin: 0 25px 0 25px;
   font-size: 16px;
   font-weight: 400;
@@ -247,6 +247,32 @@ header {
   width: 28px; /* Set width for square */
   height: 28px; /* Set height for square */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a polished look */
+}
+
+#testemonial-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+
+#testemonial-section .testemonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f6fe;
+  margin: 0 30px;
+  padding: 40px 10px;
+  border-radius: 15px;
+}
+
+#testemonial-section .testemonial-text p {
+  margin: 0 25px 0 25px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.6px;
 }
 
 span.underline-img {

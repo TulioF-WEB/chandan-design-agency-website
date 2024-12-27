@@ -65,7 +65,7 @@
 
 main {
   background-color: #e9f4ff;
-  height: 493px;
+  /* height: 493px; */
 }
 
 header {
@@ -278,4 +278,126 @@ header {
 span.underline-img {
   border-bottom: solid;
   border-image: url(../assets/vector-3.png) 30 stretch;
+}
+
+.footer {
+  background-color: #0a0b1a;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer .social-icons-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer .social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer .logo-icon {
+  width: 62px;
+  height: 62px;
+}
+
+.footer .newsletter {
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer .newsletter h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer .newsletter label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #b0b0b0;
+}
+
+.footer .newsletter input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #121212;
+  color: white;
+}
+
+.footer .newsletter button {
+  background-color: #5c6efc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 12px;
+}
+
+.footer .newsletter button:hover {
+  background-color: #4a5dd3;
+}
+
+.footer .contact,
+.footer .explore {
+  margin-bottom: 20px;
+}
+
+.footer .contact div,
+.footer .explore a {
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.footer .explore {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .explore h3 {
+  margin-bottom: 12px;
+}
+
+.footer .explore a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 9px;
+}
+
+.footer .explore a:hover {
+  text-decoration: underline;
+}
+
+.footer .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #e5e5e5;
+}
+.subscribe {
+  font-size: small;
+  color: rgb(255, 255, 255);
+}
+.contact .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; /* Space */
+  vertical-align: middle; /* Align icons with the middle of the text */
 }

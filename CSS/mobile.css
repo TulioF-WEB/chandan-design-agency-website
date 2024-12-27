@@ -40,7 +40,7 @@
   height: 100%;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .nav {
       padding: 0 5px;
       height: 60px;
@@ -59,7 +59,7 @@
       width: 20px;
       height: 20px;
   }
-}
+} */
 .services-section {
   text-align: center;
   padding: 20px 10px;
@@ -96,11 +96,10 @@
   max-width: 400px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .services-container {
       grid-template-columns: 1fr; /* Stack cards on smaller screens */
-  }
-}
+  
 
 .service-card {
   position: relative;
@@ -171,11 +170,11 @@
   background-color: #174ab8;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .services-container {
       grid-template-columns: 1fr;
   }
-}
+} */
 .service-title-wrapper {
   display: flex;
   align-items: center;

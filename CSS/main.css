@@ -1,0 +1,23 @@
+h2 {
+  color: #1a2630;
+  font-weight: 700;
+}
+
+.action-button {
+  background-color: #4361ee;
+  width: 161px;
+  height: 54px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.action-button img {
+  position: absolute;
+  margin-left: 8px;
+  width: 18px;
+}

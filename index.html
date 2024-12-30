@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css" />
     <!-- <link rel="stylesheet" href="css/desktop.css"/> -->
-    <link rel="stylesheet" href="css/mobile.css" />
-    <!-- <link rel="stylesheet" href="css/tablet.css"/> -->
+    <!-- <link rel="stylesheet" href="css/mobile.css" /> -->
+    <link rel="stylesheet" href="css/tablet.css"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -125,77 +125,77 @@
       <section id="services-section">
         <h2>Our <span>Services</span></h2>
         <div class="services-container">
-          <div class="service-card">
+          <div class="service-card" style="background-image: url('assets/icon/Rectangle\ 34625251.png'); background-size: cover; background-position: center;">
             <div class="service-content">
               <div class="service-title-wrapper">
-                <img
+                <i><img
                   class="icon-image"
                   src="assets/icon/pen-tool-2.png"
                   alt="Logo Design Icon"
                   style="
-                    width: 22px;
-                    height: 22px;
-                    margin-bottom: 10px;
+                    width: 32px;
+                    height: 32px;
+                    margin-bottom: 0px;
                     z-index: 2;
                   "
-                />
+                /></i>
                 <h3 class="service-title">Logo Design</h3>
               </div>
               <a href="#" class="service-link">Request a quote &rarr;</a>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" style="background-image: url('assets/icon/development.png'); background-size: cover; background-position: center;">
             <div class="service-content">
               <div class="service-title-wrapper">
-                <img
+              <i><img
                   class="icon-image"
                   src="assets/icon/scroll.png"
                   alt="Logo Design Icon"
                   style="
-                    width: 22px;
-                    height: 22px;
-                    margin-bottom: 10px;
+                    width: 32px;
+                    height: 32px;
+                    margin-bottom: 0px;
                     z-index: 2;
                   "
-                />
+                /></i>
                 <h3 class="service-title">Development</h3>
               </div>
               <a href="#" class="service-link">Request a quote &rarr;</a>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" style="background-image: url('assets/icon/uiuxdesign.png'); background-size: cover; background-position: center;">
             <div class="service-content">
               <div class="service-title-wrapper">
-                <img
+                <i><img
                   class="icon-image"
-                  src="assets/icon/pen-tool-2.png"
+                  src="assets/icon/ruler&pen.png"
                   alt="Logo Design Icon"
                   style="
-                    width: 22px;
-                    height: 22px;
-                    margin-bottom: 10px;
+                    width: 32px;
+                    height: 32px;
+                    margin-bottom: 0px;
                     z-index: 2;
                   "
-                />
+                /></i>
                 <h3 class="service-title">UI/UX Design</h3>
               </div>
               <a href="#" class="service-link">Request a quote &rarr;</a>
             </div>
           </div>
-          <div class="service-card">
+          <div class="service-card" style="background-image: url('assets/icon/digitalmark.png'); background-size: cover; background-position: center;">
             <div class="service-content">
               <div class="service-title-wrapper">
-                <img
+                <i><img
                   class="icon-image"
-                  src="assets/icon/scroll.png"
+                  src="assets/icon/monitor.png"
                   alt="Logo Design Icon"
                   style="
-                    width: 22px;
-                    height: 22px;
-                    margin-bottom: 10px;
+                    width: 32px;
+                    height: 32px;
+                    margin-bottom: 0px;
                     z-index: 2;
                   "
-                />
+                /></i>
                 <h3 class="service-title">Digital Marketing</h3>
               </div>
               <a href="#" class="service-link">Request a quote &rarr;</a>
@@ -326,61 +326,55 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="social-icons-container">
-        <img src="assets/Logo large.png" alt="Logo" class="logo-icon" />
-        <img src="assets/icon/dribbble.png" alt="Social Icon" />
-        <img src="assets/icon/behance.png" alt="Social Icon" />
-        <img src="assets/icon/instagram.png" alt="Social Icon" />
-        <img src="assets/icon/linkedin.png" alt="Social Icon" />
-      </div>
-
-      <div class="newsletter">
-        <h3>Subscribe to our Newsletter</h3>
-        <form id="newsletter-form" action="/submit-path" method="post">
-          <label for="email">Email*</label>
-          <input type="email" id="email" />
-          <div class="subscribe">
-            By subscribing you agree to our
-            <a href="#">Terms & Conditions</a>
+      <div class="footer-container">
+        <div class="top-row">
+          <!-- Logo and Social Icons -->
+          <div class="social-icons-container" style="align-items: flex-start;">
+            <img src="assets/Logo large.png" alt="Logo" class="logo-icon" />
+            <div class="social-icons">
+              <a href="#"><img src="assets/icon/dribbble.png" alt="Dribbble Icon" /></a>
+              <a href="#"><img src="assets/icon/behance.png" alt="Behance Icon" /></a>
+              <a href="#"><img src="assets/icon/instagram.png" alt="Instagram Icon" /></a>
+              <a href="#"><img src="assets/icon/linkedin.png" alt="LinkedIn Icon" /></a>
+            </div>
           </div>
-          <button type="submit" id="newsletter-submit" class="action-button">
-            <span>Subscribe <img src="./assets/arrow-right.png" /></span>
-          </button>
-        </form>
-      </div>
-
-      <div class="contact">
-        <h3 style="margin-bottom: 15px">Contact</h3>
-        <div>
-          <img
-            src="assets/icon/location.png"
-            alt="Location Icon"
-            class="icon"
-          />
-          66 Road Broklyn Street, 600
+    
+          <!-- Newsletter Section -->
+          <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <form id="newsletter-form" action="#" method="post">
+              <label for="email">Email*</label>
+              <input type="email" id="email" required />
+              <div class="terms">
+                By subscribing you agree to our <a href="#">Terms & Conditions</a>
+              </div>
+              <button type="submit" class="subscribe-button">Subscribe &rarr;</button>
+            </form>
+          </div>
         </div>
-        <div>
-          <img src="assets/icon/call.png" alt="Call" class="icon" />(509)
-          562-1912
-        </div>
-        <div>
-          <img
-            src="assets/icon/sms.png"
-            alt="SMS"
-            class="icon"
-          />contact@creativedesign.com
+    
+        <div class="bottom-row" style="display: flex; justify-content: space-between;">
+          <!-- Contact Section -->
+          <div class="contact" style="flex: 1; margin-right: 20px;">
+            <h3 style="margin-bottom: 15px;">Contact</h3>
+            <p><img src="assets/icon/location.png" class="icon" alt="Location" /> 66 Road Brooklyn Street, 600</p>
+            <p><img src="assets/icon/call.png" class="icon" alt="Phone" /> (509) 562-1912</p>
+            <p><img src="assets/icon/sms.png" class="icon" alt="Email" /> contact@creativedesign.com</p>
+          </div>
+    
+          <!-- Explore Section -->
+          <div class="explore" style="flex: 1; margin-left: 20px;">
+            <h3 style="margin-bottom: 15px;">Explore</h3>
+            <a href="#">About</a>
+            <a href="#">Our Team</a>
+            <a href="#">Shop</a>
+            <a href="#">Career</a>
+            <a href="#">Blog</a>
+          </div>
         </div>
       </div>
-
-      <div class="explore">
-        <h3>Explore</h3>
-        <a href="#">About</a>
-        <a href="#">Our Team</a>
-        <a href="#">Shop</a>
-        <a href="#">Career</a>
-        <a href="#">Blog</a>
-      </div>
-
+    
+      <!-- Copyright Section -->
       <div class="copyright">
         &copy; 2023 Creative Design Agency, All Rights Reserved
       </div>

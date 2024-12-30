@@ -200,10 +200,7 @@ header .dotted-image {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-weight: bold;
   font-size: 0.9rem;
-  transition: color 0.3s ease;
-  margin-left: -12px;
 }
 
 .service-link:hover {
@@ -224,20 +221,21 @@ header .dotted-image {
   display: flex;
   align-items: center;
   gap: 10px; /* Space between icon and text */
+  margin-bottom: 15px;
 }
 
-.service-title-wrapper i {
-  font-size: 15px; /* size of the icon */
-  color: #515151; /* Icon color */
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 10px;
-  display: inline-flex; /* Centers the icon inside the square */
-  justify-content: center;
-  align-items: center;
-  width: 28px;
-  height: 28px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.service-title-wrapper img {
+  position: relative;
+}
+
+.service-title-wrapper span {
+  margin: 0 0 10px;
+  position: absolute;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 #testemonial-section {
@@ -479,21 +477,26 @@ span.underline-img {
   border-bottom: solid;
   border-image: url(../assets/vector-3.png) 30 stretch;
 }
+
 .footer {
-  max-width: 1024px;
+  display: grid;
   width: 100%;
   padding: 20px;
-  background-color: #000000;
-  box-sizing: border-box;
+  gap: 10px;
+  background-color: #03071b;
+  grid-template-areas:
+    "icons contact explore newsletter"
+    "icons contact explore newsletter"
+    "icons contact explore newsletter"
+    "copyright copyright copyright copyright";
 }
 
-.footer .top {
+.footer .icons {
+  grid-area: icons;
   display: flex;
-  /* justify-content: space-between; */
-  /* border-bottom: 1px solid #444; */
+  flex-direction: column;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  gap: 250px;
 }
 
 .footer .logo img {
@@ -504,7 +507,6 @@ span.underline-img {
 .footer .social-icons {
   display: flex;
   gap: 15px;
-  flex: 1;
   margin-left: 10px;
 }
 
@@ -515,9 +517,9 @@ span.underline-img {
 }
 
 .footer .newsletter {
+  grid-area: newsletter;
   display: flex;
   flex-direction: column;
-  flex: 1;
   max-width: 300px;
 }
 
@@ -529,7 +531,7 @@ span.underline-img {
 .footer .newsletter input[type="email"] {
   padding: 10px;
   border: 1px solid #858585;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-bottom: 10px;
   background: #000000;
   color: #fff;
@@ -552,18 +554,16 @@ span.underline-img {
   background-color: #0056b3;
 }
 
-.footer .bottom {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
 .footer .contact {
-  flex: 1;
   min-width: 200px;
   display: flex;
   flex-direction: column;
 }
+
+.footer .contact h3 {
+  font-size: 18px;
+}
+
 .footer .contact p {
   margin: 5px 0;
   display: flex;
@@ -571,10 +571,14 @@ span.underline-img {
 }
 
 .footer .explore {
-  flex: 1;
+  grid-area: explore;
   min-width: 200px;
   display: flex;
   flex-direction: column;
+}
+
+.footer .explore h3 {
+  font-size: 18px;
 }
 
 .footer .contact p,
@@ -593,6 +597,7 @@ span.underline-img {
 }
 
 .footer .copyright {
+  grid-area: copyright;
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
@@ -604,11 +609,13 @@ span.underline-img {
   flex-direction: column;
   gap: 15px;
 }
+
 .footer .newsletter p {
   font-size: 12px;
   color: #ffffff;
   margin-bottom: 10px;
 }
+
 .footer .newsletter p a {
   color: #ffffff;
   text-decoration: underline;
@@ -616,4 +623,10 @@ span.underline-img {
 
 .footer .newsletter p a:hover {
   text-decoration: none;
+}
+
+.icon-image {
+  background-color: white;
+  border-radius: 4px;
+  padding: 3px;
 }

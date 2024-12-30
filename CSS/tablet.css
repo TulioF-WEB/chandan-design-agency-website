@@ -474,21 +474,25 @@ span.underline-img {
   border-bottom: solid;
   border-image: url(../assets/vector-3.png) 30 stretch;
 }
+
 .footer {
-  max-width: 1024px;
+  display: grid;
   width: 100%;
-  padding: 20px;
-  background-color: #000000;
-  box-sizing: border-box;
+  padding: 20px 40px;
+  gap: 10px;
+  background-color: #03071b;
+  grid-template-areas:
+    "icons icons newsletter newsletter"
+    "contact contact explore explore"
+    "copyright copyright copyright copyright";
 }
 
-.footer .top {
+.footer .icons {
+  grid-area: icons;
   display: flex;
-  /* justify-content: space-between; */
-  /* border-bottom: 1px solid #444; */
+  flex-direction: column;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  gap: 250px;
 }
 
 .footer .logo img {
@@ -499,7 +503,6 @@ span.underline-img {
 .footer .social-icons {
   display: flex;
   gap: 15px;
-  flex: 1;
   margin-left: 10px;
 }
 
@@ -510,6 +513,7 @@ span.underline-img {
 }
 
 .footer .newsletter {
+  grid-area: newsletter;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -547,14 +551,7 @@ span.underline-img {
   background-color: #0056b3;
 }
 
-.footer .bottom {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
 .footer .contact {
-  flex: 1;
   min-width: 200px;
   display: flex;
   flex-direction: column;
@@ -566,7 +563,7 @@ span.underline-img {
 }
 
 .footer .explore {
-  flex: 1;
+  grid-area: explore;
   min-width: 200px;
   display: flex;
   flex-direction: column;
@@ -588,6 +585,7 @@ span.underline-img {
 }
 
 .footer .copyright {
+  grid-area: copyright;
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
@@ -599,6 +597,7 @@ span.underline-img {
   flex-direction: column;
   gap: 15px;
 }
+
 .footer .newsletter p {
   font-size: 12px;
   color: #ffffff;

@@ -120,19 +120,19 @@ header .dotted-image {
 }
 
 .service-card:nth-child(1) {
-  background: url(../assets/icon/logo-design.png) center/cover no-repeat;
+  background: url(../assets/logo-design.png) center/cover no-repeat;
 }
 
 .service-card:nth-child(2) {
-  background: url(../assets/icon/development.png) center/cover no-repeat;
+  background: url(../assets/development.png) center/cover no-repeat;
 }
 
 .service-card:nth-child(3) {
-  background: url(../assets/icon/ux-ui-design.png) center/cover no-repeat;
+  background: url(../assets/ux-ui-design.png) center/cover no-repeat;
 }
 
 .service-card:nth-child(4) {
-  background: url(../assets/icon/digital-marketing.png) center/cover no-repeat;
+  background: url(../assets/digital-marketing.png) center/cover no-repeat;
 }
 
 .service-card::before {
@@ -212,6 +212,25 @@ header .dotted-image {
   gap: 40px;
 }
 
+#testemonial-content {
+  display: flex;
+  flex-direction: row;
+  margin: 0 50px;
+}
+
+#testemonial-content .slider-left,
+#testemonial-content .slider-right {
+  align-self: center;
+  background-color: #f4f6fe;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+#testemonial-content .slider-left img,
+#testemonial-content .slider-right img {
+  width: 10px;
+}
+
 #testemonial-section .testemonial {
   display: flex;
   flex-direction: column;
@@ -258,50 +277,36 @@ header .dotted-image {
   flex-direction: column;
   background: #e9f4ff;
   width: 100%;
-  height: 760px;
-  margin-bottom: 110px;
+  height: 735px;
+  margin-bottom: 140px;
 }
 
 .contact-us {
   display: grid;
-  grid-template-areas: "icons info info";
-  margin: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px;
+  gap: 25px;
 }
 
-.contact-us .icons {
-  grid-area: icons;
-  display: flex;
-  flex-direction: column;
-  row-gap: 42px;
-  margin: 3px 0;
-  width: 0;
-}
-
-.contact-us .icons img {
+.contact-us .item .icon {
+  display: inline-block;
   background-color: #fff;
   padding: 8px;
   border-radius: 4px;
+  margin-right: 10px;
 }
 
-.contact-us .info {
-  grid-area: info;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-.contact-us .info p {
-  color: #4f5863;
-  font-size: 15px;
-}
-
-.contact-us .info .item h3 {
+.contact-us .item span {
   color: #1a2630;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 12px;
+}
+
+.contact-us .item p {
+  margin-left: 52px;
+  color: #4f5863;
+  font-size: 15px;
 }
 
 #contact-form {
@@ -311,7 +316,7 @@ header .dotted-image {
   background-color: #fff;
   filter: drop-shadow(0 0 0.75rem #efede9);
   border-radius: 15px;
-  margin: 20px;
+  margin: 20px 100px;
   padding: 30px;
   grid-template-areas:
     "name name name"
@@ -323,6 +328,7 @@ header .dotted-image {
 
 #name-field {
   grid-area: name;
+  width: 500px;
 }
 
 #email-field {
@@ -371,7 +377,8 @@ header .dotted-image {
 
 #stay-updated-section .cards {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   gap: 30px;
 }
 

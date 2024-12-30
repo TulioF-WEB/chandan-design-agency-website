@@ -1,23 +1,22 @@
 h2 {
   color: #1a2630;
   font-weight: 700;
+  font-size: 24px;
 }
 
 .action-button {
   background-color: #4361ee;
-  width: 161px;
-  height: 54px;
   border: none;
   border-radius: 8px;
   color: white;
   font-weight: bold;
   font-size: 15px;
-  cursor: pointer;
+  padding: 17px 34px;
   position: relative;
+  text-decoration: none;
 }
 
 .action-button img {
   position: absolute;
-  margin-left: 8px;
-  width: 18px;
+  margin-left: 7px;
 }

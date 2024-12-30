@@ -9,10 +9,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-  padding: 0 10px;
+  height: 100px;
+  padding: 0 20px;
   background-color: #fff;
-  border-bottom: 1px solid #ddd;
 }
 
 .nav .logo {
@@ -42,68 +41,69 @@
   height: 100%;
 }
 
-/* @media (max-width: 480px) {
-  .nav {
-    padding: 0 5px;
-    height: 60px;
-  }
-
-  .nav .logo {
-    width: 40px;
-    height: 40px;
-  }
-
-  .nav .logo span {
-    font-size: 14px;
-  }
-
-  .nav .menu {
-    width: 20px;
-    height: 20px;
-  }
-} */
-
-/* main {
-  background-color: #e9f4ff;
-  height: 493px;
-} */
-
 header {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 50px;
+  background-color: #e9f4ff;
 }
 
 #introduction-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
   margin-bottom: 60px;
   gap: 40px;
 }
 
-#introduction-section .lets-talk-link {
-  width: 167px;
-  height: 54px;
-  border: none;
-  border-radius: 8px;
-  background-color: #4361ee;
-  color: white;
-  position: relative;
-  padding: 16px 34px 16px 34px;
-  font-weight: 700;
-  line-height: 21.92px;
-  text-decoration: none !important;
+#introduction-section .bright-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background: #e9f4ff;
+  width: 100%;
+  height: 390px;
+  margin-bottom: 30px;
 }
 
-#introduction-section .lets-talk-link img {
+#introduction-section .action-button {
+  width: 167px;
+  height: 54px;
+  /* padding: 17px 34px; */
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 700;
+  /* position: relative; */
+}
+
+/* #introduction-section .action-button img {
   position: absolute;
-  margin-top: -2px;
-  margin-left: 5px;
+  margin-left: 7px;
+} */
+
+#introduction-section .introduction-image {
+  position: relative;
+}
+
+#introduction-section .introduction-image .pallets-image {
+  position: relative;
+  z-index: 2;
+}
+
+#introduction-section .dotted-image {
+  position: absolute;
+  top: -22px;
+  left: -16px;
+  z-index: 1;
 }
 
 #introduction-section h2 {
   margin-top: 30px;
+}
+
+#introduction-section p.first-paragraph {
+  color: #1a2630;
 }
 
 #introduction-section p {
@@ -111,27 +111,29 @@ header {
   font-size: 16px;
   font-weight: 400;
   line-height: 27.2px;
+  color: #4f5863;
 }
 
-.services-section {
+#services-section {
   text-align: center;
   padding: 20px 10px;
   background-color: #e6f3ff;
 }
 
-.services-section h2 {
+#services-section h2 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   position: relative;
   display: inline-block;
 }
 
-.services-section h2 span {
+#services-section h2 span {
   position: relative;
   display: inline-block;
 }
 
-.services-section h2 span::after {
+#services-section h2 span::after {
   content: "";
   display: block;
   width: 100%;
@@ -149,15 +151,9 @@ header {
   max-width: 400px;
 }
 
-/* @media (max-width: 768px) {
-  .services-container {
-    grid-template-columns: 1fr; 
-} */
-
 .service-card {
   position: relative;
-  background: url(../assets/icon/Rectangle\ 34625251.png)
-  center/cover no-repeat;
+  background: url(../assets/icon/Rectangle\ 34625251.png) center/cover no-repeat;
   border-radius: 10px;
   overflow: hidden;
   color: #fff;
@@ -203,31 +199,16 @@ header {
   color: #2a73ff;
 }
 
-.view-more {
-  margin-top: 20px;
-}
-
-.view-more a {
+.view-more .action-button {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #2a73ff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  width: 182px;
+  height: 54px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: start;
 }
 
-.view-more a:hover {
-  background-color: #174ab8;
-}
-
-/* @media (max-width: 600px) {
-  .services-container {
-    grid-template-columns: 1fr;
-  }
-} */
 .service-title-wrapper {
   display: flex;
   align-items: center;
@@ -237,15 +218,15 @@ header {
 .service-title-wrapper i {
   font-size: 15px; /* size of the icon */
   color: #515151; /* Icon color */
-  background-color: #fff; 
-  border-radius: 5px; 
-  padding: 10px; 
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
   display: inline-flex; /* Centers the icon inside the square */
   justify-content: center;
   align-items: center;
-  width: 28px; 
-  height: 28px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  width: 28px;
+  height: 28px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #testemonial-section {
@@ -293,18 +274,24 @@ header {
   gap: 10px;
 }
 
-.contact-us {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "icons info info";
-  margin: 30px;
+#contact-us-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.contact-us h2 {
-  grid-area: header;
-  margin-bottom: 40px;
-  text-align: center;
+#contact-us-section .bright-background {
+  display: flex;
+  flex-direction: column;
+  background: #e9f4ff;
+  width: 100%;
+  height: 760px;
+  margin-bottom: 110px;
+}
+
+.contact-us {
+  display: grid;
+  grid-template-areas: "icons info info";
+  margin: 30px;
 }
 
 .contact-us .icons {
@@ -316,11 +303,24 @@ header {
   width: 0;
 }
 
+.contact-us .icons img {
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
 .contact-us .info {
   grid-area: info;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.contact-us .info p {
+  color: #4f5863;
+  font-size: 15px;
 }
 
 .contact-us .info .item h3 {
@@ -335,7 +335,7 @@ header {
   justify-content: center;
   gap: 20px;
   background-color: #fff;
-  border: 1px solid #000;
+  filter: drop-shadow(0 0 0.75rem #efede9);
   border-radius: 15px;
   margin: 20px;
   padding: 30px;
@@ -386,15 +386,8 @@ header {
 }
 
 #submit {
-  background-color: #4361ee;
   width: 152px;
   height: 54px;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;
 }
 
 #stay-updated-section h2 {
@@ -451,6 +444,11 @@ header {
   margin: 30px 0 60px;
 }
 
+#stay-updated-section .action-button {
+  width: 161px;
+  height: 54px;
+}
+
 .stay-updated-image {
   width: 335px;
   height: 210px;
@@ -462,8 +460,8 @@ span.underline-img {
 }
 
 .footer {
-  background-color: #0a0b1a;
-  padding: 40px 20px;
+  background-color: #03071b;
+  padding: 25px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -496,6 +494,9 @@ span.underline-img {
   max-width: 400px;
   width: 100%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .footer .newsletter h3 {
@@ -503,11 +504,17 @@ span.underline-img {
   color: white;
 }
 
+.footer .newsletter #newsletter-form {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
 .footer .newsletter label {
   display: block;
   margin-bottom: 5px;
   font-size: 14px;
-  color: #b0b0b0;
+  color: #f5f5f5;
 }
 
 .footer .newsletter input {
@@ -516,41 +523,49 @@ span.underline-img {
   border: 1px solid #ddd;
   border-radius: 4px;
   margin-bottom: 10px;
-  background-color: #121212;
-  color: white;
+  background-color: #03071b;
 }
 
-.footer .newsletter button {
-  background-color: #5c6efc;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
+.footer .newsletter .action-button {
+  width: 158px;
+  margin-top: 10px;
   cursor: pointer;
+  padding: 13px 0;
+}
+
+.footer .newsletter .action-button span {
   display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-top: 12px;
+  padding-left: 25px;
 }
 
-.footer .newsletter button:hover {
-  background-color: #4a5dd3;
+.footer .newsletter .action-button img {
+  position: static;
 }
 
-.footer .contact,
-.footer .explore {
-  margin-bottom: 20px;
+.footer .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  color: #f5f5f5;
+}
+
+.footer a,
+.footer h3,
+.footer .copyright,
+.footer .subscribe {
+  color: #f5f5f5;
 }
 
 .footer .contact div,
 .footer .explore a {
   margin-bottom: 5px;
-  color: #ffffff;
 }
 
 .footer .explore {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .footer .explore h3 {
@@ -559,7 +574,6 @@ span.underline-img {
 
 .footer .explore a {
   text-decoration: none;
-  color: #ffffff;
   margin-bottom: 9px;
 }
 
@@ -570,20 +584,27 @@ span.underline-img {
 .footer .copyright {
   margin-top: 20px;
   font-size: 14px;
-  color: #e5e5e5;
 }
+
 .subscribe {
   font-size: small;
-  color: rgb(255, 255, 255);
 }
+
+.subscribe a:link,
+.subscribe a:active,
+.subscribe a:visited {
+  color: #f5f5f5;
+}
+
 .contact .icon {
   width: 20px;
   height: 20px;
   margin-right: 10px; /* space */
   vertical-align: middle; /*  icons with the middle of the text */
 }
+
 .icon-image {
   background-color: white;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

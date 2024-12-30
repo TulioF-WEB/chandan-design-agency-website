@@ -56,6 +56,19 @@ header .bright-background {
   margin-top: 30px;
 }
 
+#introduction-section .introduction-image {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+}
+
+#introduction-section .introduction-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
 #introduction-section p.first-paragraph {
   color: #1a2630;
 }

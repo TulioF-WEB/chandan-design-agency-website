@@ -547,7 +547,7 @@ span.underline-img {
   border-radius: 6px;
   cursor: pointer;
   width: 150px;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .footer .newsletter button:hover {
@@ -558,6 +558,7 @@ span.underline-img {
   min-width: 200px;
   display: flex;
   flex-direction: column;
+  gap: 14px;
 }
 
 .footer .contact h3 {
@@ -575,6 +576,7 @@ span.underline-img {
   min-width: 200px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .footer .explore h3 {
@@ -599,7 +601,7 @@ span.underline-img {
 .footer .copyright {
   grid-area: copyright;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 45px;
   font-size: 14px;
   color: white;
 }

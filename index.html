@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <!-- <link rel="stylesheet" href="css/desktop.css"/> -->
     <!-- <link rel="stylesheet" href="css/mobile.css" /> -->
-    <link rel="stylesheet" href="css/tablet.css"/>
+    <link rel="stylesheet" href="css/tablet.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -77,23 +77,23 @@
           Crafting <span class="underline-img">Visual</span> Stories: Unleashing
           Creative Essence
         </h2>
-      </header>
 
-      <section id="introduction-section">
+        <a class="action-button" href="#">
+          Let's talk <img src="./assets/arrow-right.png" />
+        </a>
+
         <div class="bright-background">
-          <a class="action-button" href="#">
-            Let's talk <img src="./assets/arrow-right.png" />
-          </a>
-
-          <div class="introduction-image">
-            <img class="dotted-image" src="./assets/border-dotted.png" />
+          <div class="header-image">
             <img
               class="pallets-image"
               src="./assets/woman-looking-color-palettes-medium-shot.png"
             />
+            <img class="dotted-image" src="./assets/border-dotted.png" />
           </div>
         </div>
+      </header>
 
+      <section id="introduction-section">
         <h2>Elevate Your <span class="underline-img">Brand Identity</span></h2>
 
         <p class="first-paragraph">
@@ -125,7 +125,7 @@
       <section id="services-section">
         <h2>Our <span>Services</span></h2>
         <div class="services-container">
-          <div class="service-card" style="background-image: url('assets/icon/Rectangle\ 34625251.png'); background-size: cover; background-position: center;">
+          <div class="service-card" style="background-image: url('assets/icon/logo-design.png'); background-size: cover; background-position: center;">
             <div class="service-content">
               <div class="service-title-wrapper">
                 <i><img
@@ -325,59 +325,46 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="top-row">
-          <!-- Logo and Social Icons -->
-          <div class="social-icons-container" style="align-items: flex-start;">
-            <img src="assets/Logo large.png" alt="Logo" class="logo-icon" />
-            <div class="social-icons">
-              <a href="#"><img src="assets/icon/dribbble.png" alt="Dribbble Icon" /></a>
-              <a href="#"><img src="assets/icon/behance.png" alt="Behance Icon" /></a>
-              <a href="#"><img src="assets/icon/instagram.png" alt="Instagram Icon" /></a>
-              <a href="#"><img src="assets/icon/linkedin.png" alt="LinkedIn Icon" /></a>
-            </div>
-          </div>
-    
-          <!-- Newsletter Section -->
-          <div class="newsletter">
-            <h3>Subscribe to our Newsletter</h3>
-            <form id="newsletter-form" action="#" method="post">
-              <label for="email">Email*</label>
-              <input type="email" id="email" required />
-              <div class="terms">
-                By subscribing you agree to our <a href="#">Terms & Conditions</a>
+    <div class="footer">
+      <div class="top">
+          <div class="top-section">
+              <div class="logo">
+                  <img src="assets/Logo large.png" alt="Logo">
               </div>
-              <button type="submit" class="subscribe-button">Subscribe &rarr;</button>
-            </form>
+              <div class="social-icons">
+                <a href="#"><img src="assets/icon/dribbble.png" alt="Dribbble"></a>
+                  <a href="#"><img src="assets/icon/behance.png" alt="Benhance"></a>
+                  <a href="#"><img src="assets/icon/instagram.png" alt="Instagram"></a>
+                  <a href="#"><img src="assets/icon/linkedin.png" alt="LinkedIn"></a>
+              </div>
           </div>
+          <div class="newsletter">
+            <h3 style="color: white;">Subscribe to our Newsletter</h3>
+            <label for="email" style="color: white;">Email*</label>
+            <input type="email" id="email" placeholder="">
+            <p>By subscribing you agree to our <a href="#">Terms & Conditions</a></p>
+            <button>Subscribe &rarr;</button>
         </div>
-    
-        <div class="bottom-row" style="display: flex; justify-content: space-between;">
-          <!-- Contact Section -->
-          <div class="contact" style="flex: 1; margin-right: 20px;">
-            <h3 style="margin-bottom: 15px;">Contact</h3>
-            <p><img src="assets/icon/location.png" class="icon" alt="Location" /> 66 Road Brooklyn Street, 600</p>
-            <p><img src="assets/icon/call.png" class="icon" alt="Phone" /> (509) 562-1912</p>
-            <p><img src="assets/icon/sms.png" class="icon" alt="Email" /> contact@creativedesign.com</p>
-          </div>
-    
-          <!-- Explore Section -->
-          <div class="explore" style="flex: 1; margin-left: 20px;">
-            <h3 style="margin-bottom: 15px;">Explore</h3>
+    </div>
+    <div class="bottom">
+        <div class="contact">
+          <h3 style="color: white;">Contact</h3>
+          <p style="color: white;"><img src="assets/icon/location.png" alt="Location">66 Road Brooklyn Street, 600</p>
+          <p style="color: white;"><img src="assets/icon/call.png" alt="Phone">(509) 562-1912</p>
+          <p style="color: white;"><img src="assets/icon/sms.png" alt="Email">contact@creativedesign.com</p>
+        </div>
+        <div class="explore">
+          <h3 style="color: white;">Explore</h3>
             <a href="#">About</a>
             <a href="#">Our Team</a>
             <a href="#">Shop</a>
             <a href="#">Career</a>
             <a href="#">Blog</a>
-          </div>
         </div>
-      </div>
-    
-      <!-- Copyright Section -->
-      <div class="copyright">
+    </div>
+    <div class="copyright">
         &copy; 2023 Creative Design Agency, All Rights Reserved
-      </div>
-    </footer>
+    </div>
+</div>
   </body>
 </html>
